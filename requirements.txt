@@ -1,0 +1,10 @@
+# TrafficPulse: Scalable Traffic Prediction and Congestion Propagation Analysis
+pyspark>=3.5.0
+fastapi>=0.100.0
+uvicorn>=0.20.0
+pydantic>=2.0.0
+pandas>=2.0.0
+numpy>=1.20.0
+tables>=3.8.0
+h5py>=3.8.0
+requests>=2.28.0

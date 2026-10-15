@@ -1,0 +1,2072 @@
+[
+  {
+    "sensor_id": "716328",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.75,
+    "speed_lag_1": 66.33333333333333,
+    "speed_lag_2": 68.75,
+    "speed_lag_3": 57.125,
+    "rolling_mean_3": 66.27777777777777,
+    "future_speed_15min": 66.55555555555556
+  },
+  {
+    "sensor_id": "716331",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.25,
+    "speed_lag_1": 64.33333333333333,
+    "speed_lag_2": 67.625,
+    "speed_lag_3": 57.75,
+    "rolling_mean_3": 65.40277777777777,
+    "future_speed_15min": 65.88888888888889
+  },
+  {
+    "sensor_id": "716337",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.125,
+    "speed_lag_1": 65.77777777777777,
+    "speed_lag_2": 65.125,
+    "speed_lag_3": 55.25,
+    "rolling_mean_3": 65.67592592592592,
+    "future_speed_15min": 65.11111111111111
+  },
+  {
+    "sensor_id": "716339",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.125,
+    "speed_lag_1": 63.44444444444444,
+    "speed_lag_2": 64.75,
+    "speed_lag_3": 58.0,
+    "rolling_mean_3": 63.77314814814815,
+    "future_speed_15min": 64.33333333333333
+  },
+  {
+    "sensor_id": "716554",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 55.75,
+    "speed_lag_1": 59.888888888888886,
+    "speed_lag_2": 61.5,
+    "speed_lag_3": 60.0,
+    "rolling_mean_3": 59.0462962962963,
+    "future_speed_15min": 57.44444444444444
+  },
+  {
+    "sensor_id": "716571",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.75,
+    "speed_lag_1": 59.55555555555556,
+    "speed_lag_2": 65.75,
+    "speed_lag_3": 68.14285714285714,
+    "rolling_mean_3": 64.01851851851852,
+    "future_speed_15min": 65.55555555555556
+  },
+  {
+    "sensor_id": "716939",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 56.5,
+    "speed_lag_1": 53.44444444444444,
+    "speed_lag_2": 58.0,
+    "speed_lag_3": 62.5,
+    "rolling_mean_3": 55.98148148148149,
+    "future_speed_15min": 57.77777777777778
+  },
+  {
+    "sensor_id": "716941",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 59.125,
+    "speed_lag_1": 60.333333333333336,
+    "speed_lag_2": 56.875,
+    "speed_lag_3": 60.375,
+    "rolling_mean_3": 58.77777777777778,
+    "future_speed_15min": 58.55555555555556
+  },
+  {
+    "sensor_id": "716942",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 58.125,
+    "speed_lag_1": 57.0,
+    "speed_lag_2": 54.5,
+    "speed_lag_3": 54.375,
+    "rolling_mean_3": 56.541666666666664,
+    "future_speed_15min": 58.44444444444444
+  },
+  {
+    "sensor_id": "716943",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 51.625,
+    "speed_lag_1": 53.0,
+    "speed_lag_2": 50.125,
+    "speed_lag_3": 49.875,
+    "rolling_mean_3": 51.583333333333336,
+    "future_speed_15min": 43.0
+  },
+  {
+    "sensor_id": "716949",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 55.25,
+    "speed_lag_1": 60.55555555555556,
+    "speed_lag_2": 55.5,
+    "speed_lag_3": 48.625,
+    "rolling_mean_3": 57.10185185185185,
+    "future_speed_15min": 57.77777777777778
+  },
+  {
+    "sensor_id": "716951",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.0,
+    "speed_lag_1": 62.111111111111114,
+    "speed_lag_2": 56.25,
+    "speed_lag_3": 66.375,
+    "rolling_mean_3": 61.4537037037037,
+    "future_speed_15min": 62.888888888888886
+  },
+  {
+    "sensor_id": "716953",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.125,
+    "speed_lag_1": 59.77777777777778,
+    "speed_lag_2": 62.0,
+    "speed_lag_3": 64.625,
+    "rolling_mean_3": 61.300925925925924,
+    "future_speed_15min": 62.0
+  },
+  {
+    "sensor_id": "716955",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 40.25,
+    "speed_lag_1": 45.5,
+    "speed_lag_2": 44.125,
+    "speed_lag_3": 42.875,
+    "rolling_mean_3": 43.291666666666664,
+    "future_speed_15min": 45.111111111111114
+  },
+  {
+    "sensor_id": "716956",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 54.25,
+    "speed_lag_1": 57.666666666666664,
+    "speed_lag_2": 62.0,
+    "speed_lag_3": 65.0,
+    "rolling_mean_3": 57.97222222222222,
+    "future_speed_15min": 59.666666666666664
+  },
+  {
+    "sensor_id": "716958",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.125,
+    "speed_lag_1": 64.44444444444444,
+    "speed_lag_2": 60.125,
+    "speed_lag_3": 61.5,
+    "rolling_mean_3": 62.56481481481482,
+    "future_speed_15min": 62.666666666666664
+  },
+  {
+    "sensor_id": "716960",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 61.875,
+    "speed_lag_1": 62.0,
+    "speed_lag_2": 58.0,
+    "speed_lag_3": 55.25,
+    "rolling_mean_3": 60.625,
+    "future_speed_15min": 65.11111111111111
+  },
+  {
+    "sensor_id": "716968",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 55.75,
+    "speed_lag_1": 60.77777777777778,
+    "speed_lag_2": 61.375,
+    "speed_lag_3": 60.375,
+    "rolling_mean_3": 59.300925925925924,
+    "future_speed_15min": 63.0
+  },
+  {
+    "sensor_id": "717099",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 58.625,
+    "speed_lag_1": 65.66666666666667,
+    "speed_lag_2": 65.125,
+    "speed_lag_3": 66.125,
+    "rolling_mean_3": 63.13888888888889,
+    "future_speed_15min": 66.33333333333333
+  },
+  {
+    "sensor_id": "717445",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 50.5,
+    "speed_lag_1": 54.55555555555556,
+    "speed_lag_2": 57.5,
+    "speed_lag_3": 49.5,
+    "rolling_mean_3": 54.18518518518518,
+    "future_speed_15min": 49.55555555555556
+  },
+  {
+    "sensor_id": "717446",
+    "timestamp": "2012-06-27 05:10:00",
+    "speed": 40.125,
+    "speed_lag_1": 36.875,
+    "speed_lag_2": 28.88888888888889,
+    "speed_lag_3": 40.0,
+    "rolling_mean_3": 35.2962962962963,
+    "future_speed_15min": 32.833333333333336
+  },
+  {
+    "sensor_id": "717447",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.75,
+    "speed_lag_1": 61.666666666666664,
+    "speed_lag_2": 62.75,
+    "speed_lag_3": 61.0,
+    "rolling_mean_3": 62.388888888888886,
+    "future_speed_15min": 61.22222222222222
+  },
+  {
+    "sensor_id": "717450",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.0,
+    "speed_lag_1": 65.55555555555556,
+    "speed_lag_2": 66.25,
+    "speed_lag_3": 59.125,
+    "rolling_mean_3": 64.93518518518518,
+    "future_speed_15min": 66.11111111111111
+  },
+  {
+    "sensor_id": "717452",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.375,
+    "speed_lag_1": 66.22222222222223,
+    "speed_lag_2": 67.625,
+    "speed_lag_3": 66.375,
+    "rolling_mean_3": 67.07407407407408,
+    "future_speed_15min": 67.0
+  },
+  {
+    "sensor_id": "717453",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.625,
+    "speed_lag_1": 57.22222222222222,
+    "speed_lag_2": 65.375,
+    "speed_lag_3": 65.375,
+    "rolling_mean_3": 62.40740740740741,
+    "future_speed_15min": 64.33333333333333
+  },
+  {
+    "sensor_id": "717456",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.75,
+    "speed_lag_1": 69.0,
+    "speed_lag_2": 69.71428571428571,
+    "speed_lag_3": 60.875,
+    "rolling_mean_3": 69.15476190476191,
+    "future_speed_15min": 69.5
+  },
+  {
+    "sensor_id": "717458",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.875,
+    "speed_lag_1": 63.666666666666664,
+    "speed_lag_2": 63.75,
+    "speed_lag_3": 56.625,
+    "rolling_mean_3": 64.09722222222221,
+    "future_speed_15min": 62.333333333333336
+  },
+  {
+    "sensor_id": "717459",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 69.625,
+    "speed_lag_1": 68.33333333333333,
+    "speed_lag_2": 69.875,
+    "speed_lag_3": 69.625,
+    "rolling_mean_3": 69.27777777777777,
+    "future_speed_15min": 68.55555555555556
+  },
+  {
+    "sensor_id": "717460",
+    "timestamp": "2012-06-25 09:25:00",
+    "speed": 64.0,
+    "speed_lag_1": 66.55555555555556,
+    "speed_lag_2": 64.71428571428571,
+    "speed_lag_3": 65.44444444444444,
+    "rolling_mean_3": 65.08994708994709,
+    "future_speed_15min": 67.66666666666667
+  },
+  {
+    "sensor_id": "717461",
+    "timestamp": "2012-06-25 09:25:00",
+    "speed": 15.142857142857142,
+    "speed_lag_1": 15.777777777777779,
+    "speed_lag_2": 20.285714285714285,
+    "speed_lag_3": 21.555555555555557,
+    "rolling_mean_3": 17.068783068783066,
+    "future_speed_15min": 20.666666666666668
+  },
+  {
+    "sensor_id": "717462",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.5,
+    "speed_lag_1": 62.111111111111114,
+    "speed_lag_2": 68.0,
+    "speed_lag_3": 69.125,
+    "rolling_mean_3": 66.20370370370371,
+    "future_speed_15min": 69.0
+  },
+  {
+    "sensor_id": "717463",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 69.5,
+    "speed_lag_1": 62.333333333333336,
+    "speed_lag_2": 68.125,
+    "speed_lag_3": 69.0,
+    "rolling_mean_3": 66.65277777777779,
+    "future_speed_15min": 68.33333333333333
+  },
+  {
+    "sensor_id": "717465",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.125,
+    "speed_lag_1": 67.88888888888889,
+    "speed_lag_2": 67.5,
+    "speed_lag_3": 66.625,
+    "rolling_mean_3": 67.50462962962963,
+    "future_speed_15min": 66.77777777777777
+  },
+  {
+    "sensor_id": "717466",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.5,
+    "speed_lag_1": 58.333333333333336,
+    "speed_lag_2": 64.75,
+    "speed_lag_3": 68.125,
+    "rolling_mean_3": 63.19444444444445,
+    "future_speed_15min": 65.66666666666667
+  },
+  {
+    "sensor_id": "717468",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.875,
+    "speed_lag_1": 64.22222222222223,
+    "speed_lag_2": 62.875,
+    "speed_lag_3": 57.5,
+    "rolling_mean_3": 63.99074074074074,
+    "future_speed_15min": 63.55555555555556
+  },
+  {
+    "sensor_id": "717469",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.625,
+    "speed_lag_1": 64.22222222222223,
+    "speed_lag_2": 63.25,
+    "speed_lag_3": 56.5,
+    "rolling_mean_3": 63.36574074074074,
+    "future_speed_15min": 63.111111111111114
+  },
+  {
+    "sensor_id": "717472",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.0,
+    "speed_lag_1": 65.55555555555556,
+    "speed_lag_2": 59.5,
+    "speed_lag_3": 68.75,
+    "rolling_mean_3": 63.68518518518518,
+    "future_speed_15min": 66.77777777777777
+  },
+  {
+    "sensor_id": "717473",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.5,
+    "speed_lag_1": 67.88888888888889,
+    "speed_lag_2": 60.875,
+    "speed_lag_3": 67.875,
+    "rolling_mean_3": 65.75462962962963,
+    "future_speed_15min": 67.88888888888889
+  },
+  {
+    "sensor_id": "717480",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.875,
+    "speed_lag_1": 69.66666666666667,
+    "speed_lag_2": 69.375,
+    "speed_lag_3": 68.75,
+    "rolling_mean_3": 68.97222222222223,
+    "future_speed_15min": 66.44444444444444
+  },
+  {
+    "sensor_id": "717481",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 61.75,
+    "speed_lag_1": 69.22222222222223,
+    "speed_lag_2": 68.25,
+    "speed_lag_3": 69.25,
+    "rolling_mean_3": 66.4074074074074,
+    "future_speed_15min": 69.55555555555556
+  },
+  {
+    "sensor_id": "717483",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.125,
+    "speed_lag_1": 64.11111111111111,
+    "speed_lag_2": 67.25,
+    "speed_lag_3": 66.875,
+    "rolling_mean_3": 64.82870370370371,
+    "future_speed_15min": 61.333333333333336
+  },
+  {
+    "sensor_id": "717486",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 58.625,
+    "speed_lag_1": 61.0,
+    "speed_lag_2": 58.5,
+    "speed_lag_3": 60.25,
+    "rolling_mean_3": 59.375,
+    "future_speed_15min": 57.333333333333336
+  },
+  {
+    "sensor_id": "717488",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.125,
+    "speed_lag_1": 62.77777777777778,
+    "speed_lag_2": 65.5,
+    "speed_lag_3": 57.125,
+    "rolling_mean_3": 63.800925925925924,
+    "future_speed_15min": 63.888888888888886
+  },
+  {
+    "sensor_id": "717489",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.375,
+    "speed_lag_1": 61.111111111111114,
+    "speed_lag_2": 62.125,
+    "speed_lag_3": 61.125,
+    "rolling_mean_3": 61.870370370370374,
+    "future_speed_15min": 60.888888888888886
+  },
+  {
+    "sensor_id": "717490",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.125,
+    "speed_lag_1": 62.55555555555556,
+    "speed_lag_2": 58.25,
+    "speed_lag_3": 63.875,
+    "rolling_mean_3": 60.31018518518518,
+    "future_speed_15min": 61.22222222222222
+  },
+  {
+    "sensor_id": "717491",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.75,
+    "speed_lag_1": 66.77777777777777,
+    "speed_lag_2": 64.75,
+    "speed_lag_3": 65.75,
+    "rolling_mean_3": 66.0925925925926,
+    "future_speed_15min": 66.77777777777777
+  },
+  {
+    "sensor_id": "717492",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.125,
+    "speed_lag_1": 66.77777777777777,
+    "speed_lag_2": 67.625,
+    "speed_lag_3": 62.125,
+    "rolling_mean_3": 67.50925925925925,
+    "future_speed_15min": 61.22222222222222
+  },
+  {
+    "sensor_id": "717493",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.75,
+    "speed_lag_1": 59.666666666666664,
+    "speed_lag_2": 58.0,
+    "speed_lag_3": 60.875,
+    "rolling_mean_3": 59.47222222222222,
+    "future_speed_15min": 62.333333333333336
+  },
+  {
+    "sensor_id": "717495",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.625,
+    "speed_lag_1": 66.0,
+    "speed_lag_2": 65.125,
+    "speed_lag_3": 65.375,
+    "rolling_mean_3": 65.91666666666667,
+    "future_speed_15min": 66.66666666666667
+  },
+  {
+    "sensor_id": "717497",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.875,
+    "speed_lag_1": 67.77777777777777,
+    "speed_lag_2": 66.5,
+    "speed_lag_3": 68.125,
+    "rolling_mean_3": 67.7175925925926,
+    "future_speed_15min": 67.88888888888889
+  },
+  {
+    "sensor_id": "717498",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 54.625,
+    "speed_lag_1": 54.111111111111114,
+    "speed_lag_2": 54.875,
+    "speed_lag_3": 48.375,
+    "rolling_mean_3": 54.53703703703704,
+    "future_speed_15min": 53.0
+  },
+  {
+    "sensor_id": "717499",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.375,
+    "speed_lag_1": 50.888888888888886,
+    "speed_lag_2": 56.875,
+    "speed_lag_3": 58.25,
+    "rolling_mean_3": 56.0462962962963,
+    "future_speed_15min": 58.22222222222222
+  },
+  {
+    "sensor_id": "717502",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.625,
+    "speed_lag_1": 67.11111111111111,
+    "speed_lag_2": 66.5,
+    "speed_lag_3": 67.25,
+    "rolling_mean_3": 66.74537037037037,
+    "future_speed_15min": 66.11111111111111
+  },
+  {
+    "sensor_id": "717504",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.75,
+    "speed_lag_1": 66.33333333333333,
+    "speed_lag_2": 65.25,
+    "speed_lag_3": 57.625,
+    "rolling_mean_3": 65.44444444444444,
+    "future_speed_15min": 65.44444444444444
+  },
+  {
+    "sensor_id": "717508",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.25,
+    "speed_lag_1": 66.22222222222223,
+    "speed_lag_2": 65.625,
+    "speed_lag_3": 57.25,
+    "rolling_mean_3": 65.69907407407408,
+    "future_speed_15min": 65.33333333333333
+  },
+  {
+    "sensor_id": "717510",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.5,
+    "speed_lag_1": 66.22222222222223,
+    "speed_lag_2": 66.125,
+    "speed_lag_3": 56.125,
+    "rolling_mean_3": 66.2824074074074,
+    "future_speed_15min": 63.44444444444444
+  },
+  {
+    "sensor_id": "717513",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.0,
+    "speed_lag_1": 64.88888888888889,
+    "speed_lag_2": 65.0,
+    "speed_lag_3": 63.375,
+    "rolling_mean_3": 64.96296296296296,
+    "future_speed_15min": 62.666666666666664
+  },
+  {
+    "sensor_id": "717570",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 61.0,
+    "speed_lag_1": 65.22222222222223,
+    "speed_lag_2": 65.0,
+    "speed_lag_3": 64.875,
+    "rolling_mean_3": 63.74074074074074,
+    "future_speed_15min": 64.44444444444444
+  },
+  {
+    "sensor_id": "717571",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.375,
+    "speed_lag_1": 67.0,
+    "speed_lag_2": 67.625,
+    "speed_lag_3": 68.25,
+    "rolling_mean_3": 67.66666666666667,
+    "future_speed_15min": 67.66666666666667
+  },
+  {
+    "sensor_id": "717572",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.75,
+    "speed_lag_1": 65.22222222222223,
+    "speed_lag_2": 63.375,
+    "speed_lag_3": 68.375,
+    "rolling_mean_3": 64.7824074074074,
+    "future_speed_15min": 65.55555555555556
+  },
+  {
+    "sensor_id": "717573",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.625,
+    "speed_lag_1": 64.55555555555556,
+    "speed_lag_2": 63.25,
+    "speed_lag_3": 66.625,
+    "rolling_mean_3": 63.47685185185185,
+    "future_speed_15min": 65.66666666666667
+  },
+  {
+    "sensor_id": "717576",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.375,
+    "speed_lag_1": 66.11111111111111,
+    "speed_lag_2": 66.25,
+    "speed_lag_3": 68.0,
+    "rolling_mean_3": 65.57870370370371,
+    "future_speed_15min": 65.88888888888889
+  },
+  {
+    "sensor_id": "717578",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 58.75,
+    "speed_lag_1": 65.22222222222223,
+    "speed_lag_2": 64.75,
+    "speed_lag_3": 67.5,
+    "rolling_mean_3": 62.90740740740741,
+    "future_speed_15min": 68.0
+  },
+  {
+    "sensor_id": "717580",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.75,
+    "speed_lag_1": 66.33333333333333,
+    "speed_lag_2": 67.375,
+    "speed_lag_3": 60.875,
+    "rolling_mean_3": 66.81944444444444,
+    "future_speed_15min": 68.22222222222223
+  },
+  {
+    "sensor_id": "717582",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.25,
+    "speed_lag_1": 66.77777777777777,
+    "speed_lag_2": 67.25,
+    "speed_lag_3": 68.375,
+    "rolling_mean_3": 66.42592592592592,
+    "future_speed_15min": 63.77777777777778
+  },
+  {
+    "sensor_id": "717583",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.375,
+    "speed_lag_1": 65.66666666666667,
+    "speed_lag_2": 68.625,
+    "speed_lag_3": 66.25,
+    "rolling_mean_3": 67.22222222222223,
+    "future_speed_15min": 68.22222222222223
+  },
+  {
+    "sensor_id": "717585",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.25,
+    "speed_lag_1": 64.33333333333333,
+    "speed_lag_2": 67.75,
+    "speed_lag_3": 65.5,
+    "rolling_mean_3": 66.44444444444444,
+    "future_speed_15min": 68.22222222222223
+  },
+  {
+    "sensor_id": "717587",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.0,
+    "speed_lag_1": 64.0,
+    "speed_lag_2": 68.125,
+    "speed_lag_3": 66.125,
+    "rolling_mean_3": 66.375,
+    "future_speed_15min": 66.88888888888889
+  },
+  {
+    "sensor_id": "717590",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.25,
+    "speed_lag_1": 66.33333333333333,
+    "speed_lag_2": 64.75,
+    "speed_lag_3": 65.5,
+    "rolling_mean_3": 66.1111111111111,
+    "future_speed_15min": 64.22222222222223
+  },
+  {
+    "sensor_id": "717592",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 59.375,
+    "speed_lag_1": 62.44444444444444,
+    "speed_lag_2": 62.375,
+    "speed_lag_3": 63.25,
+    "rolling_mean_3": 61.39814814814815,
+    "future_speed_15min": 66.44444444444444
+  },
+  {
+    "sensor_id": "717595",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.0,
+    "speed_lag_1": 66.77777777777777,
+    "speed_lag_2": 69.0,
+    "speed_lag_3": 66.875,
+    "rolling_mean_3": 67.25925925925925,
+    "future_speed_15min": 68.44444444444444
+  },
+  {
+    "sensor_id": "717608",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.25,
+    "speed_lag_1": 66.88888888888889,
+    "speed_lag_2": 66.5,
+    "speed_lag_3": 59.875,
+    "rolling_mean_3": 66.87962962962963,
+    "future_speed_15min": 66.55555555555556
+  },
+  {
+    "sensor_id": "717610",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.875,
+    "speed_lag_1": 63.55555555555556,
+    "speed_lag_2": 61.0,
+    "speed_lag_3": 64.5,
+    "rolling_mean_3": 61.81018518518518,
+    "future_speed_15min": 65.66666666666667
+  },
+  {
+    "sensor_id": "717804",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 59.5,
+    "speed_lag_1": 61.0,
+    "speed_lag_2": 60.75,
+    "speed_lag_3": 58.75,
+    "rolling_mean_3": 60.416666666666664,
+    "future_speed_15min": 61.55555555555556
+  },
+  {
+    "sensor_id": "717816",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.125,
+    "speed_lag_1": 65.33333333333333,
+    "speed_lag_2": 65.875,
+    "speed_lag_3": 64.875,
+    "rolling_mean_3": 66.1111111111111,
+    "future_speed_15min": 61.666666666666664
+  },
+  {
+    "sensor_id": "717818",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 58.875,
+    "speed_lag_1": 65.88888888888889,
+    "speed_lag_2": 65.125,
+    "speed_lag_3": 67.0,
+    "rolling_mean_3": 63.2962962962963,
+    "future_speed_15min": 65.22222222222223
+  },
+  {
+    "sensor_id": "717819",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.125,
+    "speed_lag_1": 66.77777777777777,
+    "speed_lag_2": 67.375,
+    "speed_lag_3": 58.75,
+    "rolling_mean_3": 67.42592592592592,
+    "future_speed_15min": 67.55555555555556
+  },
+  {
+    "sensor_id": "717821",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.5,
+    "speed_lag_1": 63.333333333333336,
+    "speed_lag_2": 59.375,
+    "speed_lag_3": 66.25,
+    "rolling_mean_3": 63.06944444444445,
+    "future_speed_15min": 65.77777777777777
+  },
+  {
+    "sensor_id": "717823",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.625,
+    "speed_lag_1": 66.77777777777777,
+    "speed_lag_2": 66.125,
+    "speed_lag_3": 63.875,
+    "rolling_mean_3": 65.8425925925926,
+    "future_speed_15min": 66.44444444444444
+  },
+  {
+    "sensor_id": "717825",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.71428571428571,
+    "speed_lag_1": 66.11111111111111,
+    "speed_lag_2": 68.0,
+    "speed_lag_3": 66.875,
+    "rolling_mean_3": 67.27513227513226,
+    "future_speed_15min": 67.33333333333333
+  },
+  {
+    "sensor_id": "718045",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 57.625,
+    "speed_lag_1": 64.0,
+    "speed_lag_2": 64.5,
+    "speed_lag_3": 59.714285714285715,
+    "rolling_mean_3": 62.041666666666664,
+    "future_speed_15min": 60.25
+  },
+  {
+    "sensor_id": "718064",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.625,
+    "speed_lag_1": 68.44444444444444,
+    "speed_lag_2": 66.125,
+    "speed_lag_3": 65.25,
+    "rolling_mean_3": 67.06481481481482,
+    "future_speed_15min": 65.77777777777777
+  },
+  {
+    "sensor_id": "718066",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.625,
+    "speed_lag_1": 69.44444444444444,
+    "speed_lag_2": 67.25,
+    "speed_lag_3": 66.875,
+    "rolling_mean_3": 67.77314814814815,
+    "future_speed_15min": 67.11111111111111
+  },
+  {
+    "sensor_id": "718072",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.375,
+    "speed_lag_1": 68.55555555555556,
+    "speed_lag_2": 64.125,
+    "speed_lag_3": 57.875,
+    "rolling_mean_3": 66.68518518518518,
+    "future_speed_15min": 66.55555555555556
+  },
+  {
+    "sensor_id": "718076",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.875,
+    "speed_lag_1": 69.33333333333333,
+    "speed_lag_2": 68.875,
+    "speed_lag_3": 68.75,
+    "rolling_mean_3": 69.02777777777777,
+    "future_speed_15min": 69.55555555555556
+  },
+  {
+    "sensor_id": "718089",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 58.25,
+    "speed_lag_1": 60.55555555555556,
+    "speed_lag_2": 62.0,
+    "speed_lag_3": 61.625,
+    "rolling_mean_3": 60.26851851851851,
+    "future_speed_15min": 62.22222222222222
+  },
+  {
+    "sensor_id": "718090",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 57.875,
+    "speed_lag_1": 56.22222222222222,
+    "speed_lag_2": 58.625,
+    "speed_lag_3": 51.375,
+    "rolling_mean_3": 57.574074074074076,
+    "future_speed_15min": 59.22222222222222
+  },
+  {
+    "sensor_id": "718141",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 69.0,
+    "speed_lag_1": 69.66666666666667,
+    "speed_lag_2": 67.75,
+    "speed_lag_3": 69.125,
+    "rolling_mean_3": 68.80555555555556,
+    "future_speed_15min": 68.66666666666667
+  },
+  {
+    "sensor_id": "718204",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.375,
+    "speed_lag_1": 66.22222222222223,
+    "speed_lag_2": 66.0,
+    "speed_lag_3": 64.0,
+    "rolling_mean_3": 66.19907407407408,
+    "future_speed_15min": 65.77777777777777
+  },
+  {
+    "sensor_id": "718371",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 61.75,
+    "speed_lag_1": 61.0,
+    "speed_lag_2": 63.625,
+    "speed_lag_3": 64.25,
+    "rolling_mean_3": 62.125,
+    "future_speed_15min": 62.55555555555556
+  },
+  {
+    "sensor_id": "718379",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 52.875,
+    "speed_lag_1": 57.77777777777778,
+    "speed_lag_2": 56.0,
+    "speed_lag_3": 48.375,
+    "rolling_mean_3": 55.550925925925924,
+    "future_speed_15min": 57.44444444444444
+  },
+  {
+    "sensor_id": "718496",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.625,
+    "speed_lag_1": 65.22222222222223,
+    "speed_lag_2": 61.25,
+    "speed_lag_3": 62.375,
+    "rolling_mean_3": 63.699074074074076,
+    "future_speed_15min": 58.111111111111114
+  },
+  {
+    "sensor_id": "718499",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.0,
+    "speed_lag_1": 63.22222222222222,
+    "speed_lag_2": 63.0,
+    "speed_lag_3": 65.0,
+    "rolling_mean_3": 62.74074074074074,
+    "future_speed_15min": 62.111111111111114
+  },
+  {
+    "sensor_id": "737529",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.25,
+    "speed_lag_1": 59.22222222222222,
+    "speed_lag_2": 57.875,
+    "speed_lag_3": 68.0,
+    "rolling_mean_3": 60.78240740740741,
+    "future_speed_15min": 63.0
+  },
+  {
+    "sensor_id": "759591",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.125,
+    "speed_lag_1": 53.22222222222222,
+    "speed_lag_2": 62.375,
+    "speed_lag_3": 63.375,
+    "rolling_mean_3": 58.574074074074076,
+    "future_speed_15min": 60.55555555555556
+  },
+  {
+    "sensor_id": "759602",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.125,
+    "speed_lag_1": 59.77777777777778,
+    "speed_lag_2": 62.875,
+    "speed_lag_3": 62.125,
+    "rolling_mean_3": 60.925925925925924,
+    "future_speed_15min": 63.888888888888886
+  },
+  {
+    "sensor_id": "759772",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 59.125,
+    "speed_lag_1": 53.44444444444444,
+    "speed_lag_2": 57.125,
+    "speed_lag_3": 51.25,
+    "rolling_mean_3": 56.56481481481482,
+    "future_speed_15min": 52.0
+  },
+  {
+    "sensor_id": "760024",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.75,
+    "speed_lag_1": 63.666666666666664,
+    "speed_lag_2": 64.75,
+    "speed_lag_3": 62.714285714285715,
+    "rolling_mean_3": 64.05555555555556,
+    "future_speed_15min": 63.888888888888886
+  },
+  {
+    "sensor_id": "760650",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 57.875,
+    "speed_lag_1": 58.333333333333336,
+    "speed_lag_2": 60.625,
+    "speed_lag_3": 61.714285714285715,
+    "rolling_mean_3": 58.94444444444445,
+    "future_speed_15min": 56.25
+  },
+  {
+    "sensor_id": "760987",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 54.125,
+    "speed_lag_1": 58.22222222222222,
+    "speed_lag_2": 55.375,
+    "speed_lag_3": 56.25,
+    "rolling_mean_3": 55.90740740740741,
+    "future_speed_15min": 65.66666666666667
+  },
+  {
+    "sensor_id": "761003",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.375,
+    "speed_lag_1": 66.88888888888889,
+    "speed_lag_2": 64.5,
+    "speed_lag_3": 69.0,
+    "rolling_mean_3": 65.92129629629629,
+    "future_speed_15min": 66.22222222222223
+  },
+  {
+    "sensor_id": "761599",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 58.75,
+    "speed_lag_1": 60.0,
+    "speed_lag_2": 62.625,
+    "speed_lag_3": 60.5,
+    "rolling_mean_3": 60.458333333333336,
+    "future_speed_15min": 57.22222222222222
+  },
+  {
+    "sensor_id": "761604",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 47.375,
+    "speed_lag_1": 56.77777777777778,
+    "speed_lag_2": 50.75,
+    "speed_lag_3": 54.0,
+    "rolling_mean_3": 51.63425925925926,
+    "future_speed_15min": 48.111111111111114
+  },
+  {
+    "sensor_id": "762329",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.875,
+    "speed_lag_1": 69.55555555555556,
+    "speed_lag_2": 63.5,
+    "speed_lag_3": 65.75,
+    "rolling_mean_3": 66.64351851851852,
+    "future_speed_15min": 65.55555555555556
+  },
+  {
+    "sensor_id": "763995",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 70.0,
+    "speed_lag_1": 68.25,
+    "speed_lag_2": 68.625,
+    "speed_lag_3": 69.57142857142857,
+    "rolling_mean_3": 68.95833333333333,
+    "future_speed_15min": 68.77777777777777
+  },
+  {
+    "sensor_id": "764101",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.0,
+    "speed_lag_1": 68.77777777777777,
+    "speed_lag_2": 65.0,
+    "speed_lag_3": 65.25,
+    "rolling_mean_3": 65.25925925925925,
+    "future_speed_15min": 66.88888888888889
+  },
+  {
+    "sensor_id": "764106",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 59.75,
+    "speed_lag_1": 55.111111111111114,
+    "speed_lag_2": 57.25,
+    "speed_lag_3": 50.75,
+    "rolling_mean_3": 57.370370370370374,
+    "future_speed_15min": 56.77777777777778
+  },
+  {
+    "sensor_id": "764120",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.625,
+    "speed_lag_1": 68.0,
+    "speed_lag_2": 66.75,
+    "speed_lag_3": 64.57142857142857,
+    "rolling_mean_3": 67.79166666666667,
+    "future_speed_15min": 66.44444444444444
+  },
+  {
+    "sensor_id": "764424",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.875,
+    "speed_lag_1": 62.888888888888886,
+    "speed_lag_2": 62.375,
+    "speed_lag_3": 66.0,
+    "rolling_mean_3": 62.71296296296296,
+    "future_speed_15min": 68.77777777777777
+  },
+  {
+    "sensor_id": "764760",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 69.0,
+    "speed_lag_1": 69.33333333333333,
+    "speed_lag_2": 69.125,
+    "speed_lag_3": 67.125,
+    "rolling_mean_3": 69.15277777777777,
+    "future_speed_15min": 67.88888888888889
+  },
+  {
+    "sensor_id": "764766",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.625,
+    "speed_lag_1": 65.88888888888889,
+    "speed_lag_2": 64.875,
+    "speed_lag_3": 67.625,
+    "rolling_mean_3": 65.79629629629629,
+    "future_speed_15min": 65.11111111111111
+  },
+  {
+    "sensor_id": "764781",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.25,
+    "speed_lag_1": 64.22222222222223,
+    "speed_lag_2": 63.875,
+    "speed_lag_3": 64.875,
+    "rolling_mean_3": 64.11574074074075,
+    "future_speed_15min": 64.33333333333333
+  },
+  {
+    "sensor_id": "764794",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.75,
+    "speed_lag_1": 67.77777777777777,
+    "speed_lag_2": 68.375,
+    "speed_lag_3": 67.625,
+    "rolling_mean_3": 67.63425925925925,
+    "future_speed_15min": 67.22222222222223
+  },
+  {
+    "sensor_id": "764853",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.25,
+    "speed_lag_1": 57.888888888888886,
+    "speed_lag_2": 59.25,
+    "speed_lag_3": 59.125,
+    "rolling_mean_3": 59.129629629629626,
+    "future_speed_15min": 59.0
+  },
+  {
+    "sensor_id": "764858",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.875,
+    "speed_lag_1": 67.77777777777777,
+    "speed_lag_2": 67.5,
+    "speed_lag_3": 59.375,
+    "rolling_mean_3": 68.05092592592592,
+    "future_speed_15min": 67.55555555555556
+  },
+  {
+    "sensor_id": "764949",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.875,
+    "speed_lag_1": 62.22222222222222,
+    "speed_lag_2": 61.5,
+    "speed_lag_3": 59.25,
+    "rolling_mean_3": 61.53240740740741,
+    "future_speed_15min": 59.666666666666664
+  },
+  {
+    "sensor_id": "765099",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.5,
+    "speed_lag_1": 65.0,
+    "speed_lag_2": 64.375,
+    "speed_lag_3": 65.5,
+    "rolling_mean_3": 64.625,
+    "future_speed_15min": 64.33333333333333
+  },
+  {
+    "sensor_id": "765164",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.75,
+    "speed_lag_1": 68.11111111111111,
+    "speed_lag_2": 69.0,
+    "speed_lag_3": 69.5,
+    "rolling_mean_3": 68.62037037037037,
+    "future_speed_15min": 70.0
+  },
+  {
+    "sensor_id": "765171",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.5,
+    "speed_lag_1": 57.55555555555556,
+    "speed_lag_2": 56.25,
+    "speed_lag_3": 60.5,
+    "rolling_mean_3": 58.76851851851851,
+    "future_speed_15min": 52.875
+  },
+  {
+    "sensor_id": "765176",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 69.625,
+    "speed_lag_1": 69.33333333333333,
+    "speed_lag_2": 69.0,
+    "speed_lag_3": 68.25,
+    "rolling_mean_3": 69.31944444444444,
+    "future_speed_15min": 68.0
+  },
+  {
+    "sensor_id": "765182",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.125,
+    "speed_lag_1": 67.55555555555556,
+    "speed_lag_2": 69.375,
+    "speed_lag_3": 67.125,
+    "rolling_mean_3": 67.35185185185185,
+    "future_speed_15min": 67.22222222222223
+  },
+  {
+    "sensor_id": "765265",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 58.0,
+    "speed_lag_1": 59.0,
+    "speed_lag_2": 56.125,
+    "speed_lag_3": 64.125,
+    "rolling_mean_3": 57.708333333333336,
+    "future_speed_15min": 55.666666666666664
+  },
+  {
+    "sensor_id": "765273",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.25,
+    "speed_lag_1": 60.22222222222222,
+    "speed_lag_2": 57.5,
+    "speed_lag_3": 36.0,
+    "rolling_mean_3": 60.324074074074076,
+    "future_speed_15min": 65.33333333333333
+  },
+  {
+    "sensor_id": "765604",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.875,
+    "speed_lag_1": 61.44444444444444,
+    "speed_lag_2": 62.5,
+    "speed_lag_3": 63.0,
+    "rolling_mean_3": 62.27314814814815,
+    "future_speed_15min": 61.111111111111114
+  },
+  {
+    "sensor_id": "767053",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.125,
+    "speed_lag_1": 59.77777777777778,
+    "speed_lag_2": 57.0,
+    "speed_lag_3": 59.375,
+    "rolling_mean_3": 59.63425925925926,
+    "future_speed_15min": 54.22222222222222
+  },
+  {
+    "sensor_id": "767350",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.5,
+    "speed_lag_1": 63.333333333333336,
+    "speed_lag_2": 63.375,
+    "speed_lag_3": 65.0,
+    "rolling_mean_3": 64.73611111111111,
+    "future_speed_15min": 62.0
+  },
+  {
+    "sensor_id": "767351",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.125,
+    "speed_lag_1": 68.55555555555556,
+    "speed_lag_2": 67.125,
+    "speed_lag_3": 67.25,
+    "rolling_mean_3": 67.93518518518518,
+    "future_speed_15min": 66.0
+  },
+  {
+    "sensor_id": "767366",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.0,
+    "speed_lag_1": 60.0,
+    "speed_lag_2": 57.875,
+    "speed_lag_3": 63.75,
+    "rolling_mean_3": 60.625,
+    "future_speed_15min": 61.0
+  },
+  {
+    "sensor_id": "767454",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 69.375,
+    "speed_lag_1": 66.44444444444444,
+    "speed_lag_2": 67.375,
+    "speed_lag_3": 65.75,
+    "rolling_mean_3": 67.73148148148148,
+    "future_speed_15min": 65.22222222222223
+  },
+  {
+    "sensor_id": "767455",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 69.75,
+    "speed_lag_1": 66.0,
+    "speed_lag_2": 68.375,
+    "speed_lag_3": 69.0,
+    "rolling_mean_3": 68.04166666666667,
+    "future_speed_15min": 66.11111111111111
+  },
+  {
+    "sensor_id": "767470",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.75,
+    "speed_lag_1": 59.111111111111114,
+    "speed_lag_2": 63.75,
+    "speed_lag_3": 62.125,
+    "rolling_mean_3": 61.870370370370374,
+    "future_speed_15min": 60.333333333333336
+  },
+  {
+    "sensor_id": "767471",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.375,
+    "speed_lag_1": 64.77777777777777,
+    "speed_lag_2": 61.875,
+    "speed_lag_3": 62.25,
+    "rolling_mean_3": 64.00925925925925,
+    "future_speed_15min": 64.66666666666667
+  },
+  {
+    "sensor_id": "767494",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.5,
+    "speed_lag_1": 65.44444444444444,
+    "speed_lag_2": 66.375,
+    "speed_lag_3": 56.375,
+    "rolling_mean_3": 65.77314814814815,
+    "future_speed_15min": 65.0
+  },
+  {
+    "sensor_id": "767495",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.5,
+    "speed_lag_1": 68.44444444444444,
+    "speed_lag_2": 69.25,
+    "speed_lag_3": 68.625,
+    "rolling_mean_3": 68.73148148148148,
+    "future_speed_15min": 68.22222222222223
+  },
+  {
+    "sensor_id": "767509",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.875,
+    "speed_lag_1": 66.44444444444444,
+    "speed_lag_2": 57.5,
+    "speed_lag_3": 68.375,
+    "rolling_mean_3": 63.93981481481482,
+    "future_speed_15min": 63.77777777777778
+  },
+  {
+    "sensor_id": "767523",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.875,
+    "speed_lag_1": 68.0,
+    "speed_lag_2": 68.25,
+    "speed_lag_3": 61.25,
+    "rolling_mean_3": 68.04166666666667,
+    "future_speed_15min": 69.0
+  },
+  {
+    "sensor_id": "767541",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.625,
+    "speed_lag_1": 65.88888888888889,
+    "speed_lag_2": 65.875,
+    "speed_lag_3": 65.75,
+    "rolling_mean_3": 65.79629629629629,
+    "future_speed_15min": 66.88888888888889
+  },
+  {
+    "sensor_id": "767542",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.5,
+    "speed_lag_1": 68.55555555555556,
+    "speed_lag_2": 68.25,
+    "speed_lag_3": 68.0,
+    "rolling_mean_3": 67.76851851851852,
+    "future_speed_15min": 66.77777777777777
+  },
+  {
+    "sensor_id": "767554",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.0,
+    "speed_lag_1": 63.111111111111114,
+    "speed_lag_2": 63.5,
+    "speed_lag_3": 65.25,
+    "rolling_mean_3": 63.2037037037037,
+    "future_speed_15min": 65.11111111111111
+  },
+  {
+    "sensor_id": "767572",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.0,
+    "speed_lag_1": 61.333333333333336,
+    "speed_lag_2": 61.25,
+    "speed_lag_3": 63.5,
+    "rolling_mean_3": 61.861111111111114,
+    "future_speed_15min": 65.33333333333333
+  },
+  {
+    "sensor_id": "767573",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.625,
+    "speed_lag_1": 68.11111111111111,
+    "speed_lag_2": 66.875,
+    "speed_lag_3": 68.125,
+    "rolling_mean_3": 67.20370370370371,
+    "future_speed_15min": 68.11111111111111
+  },
+  {
+    "sensor_id": "767585",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.0,
+    "speed_lag_1": 67.22222222222223,
+    "speed_lag_2": 68.875,
+    "speed_lag_3": 68.375,
+    "rolling_mean_3": 68.0324074074074,
+    "future_speed_15min": 66.22222222222223
+  },
+  {
+    "sensor_id": "767609",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.875,
+    "speed_lag_1": 62.22222222222222,
+    "speed_lag_2": 64.0,
+    "speed_lag_3": 56.125,
+    "rolling_mean_3": 63.03240740740741,
+    "future_speed_15min": 61.55555555555556
+  },
+  {
+    "sensor_id": "767610",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.0,
+    "speed_lag_1": 64.77777777777777,
+    "speed_lag_2": 66.75,
+    "speed_lag_3": 66.5,
+    "rolling_mean_3": 66.50925925925925,
+    "future_speed_15min": 60.77777777777778
+  },
+  {
+    "sensor_id": "767620",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.0,
+    "speed_lag_1": 63.333333333333336,
+    "speed_lag_2": 62.5,
+    "speed_lag_3": 66.875,
+    "rolling_mean_3": 64.27777777777779,
+    "future_speed_15min": 65.11111111111111
+  },
+  {
+    "sensor_id": "767621",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.25,
+    "speed_lag_1": 67.0,
+    "speed_lag_2": 66.75,
+    "speed_lag_3": 57.125,
+    "rolling_mean_3": 66.66666666666667,
+    "future_speed_15min": 65.77777777777777
+  },
+  {
+    "sensor_id": "767750",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.75,
+    "speed_lag_1": 67.55555555555556,
+    "speed_lag_2": 67.5,
+    "speed_lag_3": 65.25,
+    "rolling_mean_3": 65.93518518518518,
+    "future_speed_15min": 66.88888888888889
+  },
+  {
+    "sensor_id": "767751",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.75,
+    "speed_lag_1": 57.666666666666664,
+    "speed_lag_2": 57.0,
+    "speed_lag_3": 52.375,
+    "rolling_mean_3": 59.138888888888886,
+    "future_speed_15min": 60.77777777777778
+  },
+  {
+    "sensor_id": "768066",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.375,
+    "speed_lag_1": 66.66666666666667,
+    "speed_lag_2": 65.125,
+    "speed_lag_3": 66.375,
+    "rolling_mean_3": 65.3888888888889,
+    "future_speed_15min": 65.66666666666667
+  },
+  {
+    "sensor_id": "768469",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.75,
+    "speed_lag_1": 66.22222222222223,
+    "speed_lag_2": 70.0,
+    "speed_lag_3": 59.625,
+    "rolling_mean_3": 66.32407407407408,
+    "future_speed_15min": 68.44444444444444
+  },
+  {
+    "sensor_id": "769345",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.25,
+    "speed_lag_1": 64.77777777777777,
+    "speed_lag_2": 58.5,
+    "speed_lag_3": 66.25,
+    "rolling_mean_3": 63.175925925925924,
+    "future_speed_15min": 65.88888888888889
+  },
+  {
+    "sensor_id": "769346",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.75,
+    "speed_lag_1": 64.77777777777777,
+    "speed_lag_2": 67.25,
+    "speed_lag_3": 65.125,
+    "rolling_mean_3": 66.25925925925925,
+    "future_speed_15min": 66.55555555555556
+  },
+  {
+    "sensor_id": "769358",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.125,
+    "speed_lag_1": 55.77777777777778,
+    "speed_lag_2": 64.0,
+    "speed_lag_3": 65.25,
+    "rolling_mean_3": 61.63425925925926,
+    "future_speed_15min": 63.888888888888886
+  },
+  {
+    "sensor_id": "769359",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.25,
+    "speed_lag_1": 62.666666666666664,
+    "speed_lag_2": 65.25,
+    "speed_lag_3": 60.375,
+    "rolling_mean_3": 64.05555555555556,
+    "future_speed_15min": 62.0
+  },
+  {
+    "sensor_id": "769372",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 69.25,
+    "speed_lag_1": 69.0,
+    "speed_lag_2": 69.375,
+    "speed_lag_3": 60.625,
+    "rolling_mean_3": 69.20833333333333,
+    "future_speed_15min": 67.44444444444444
+  },
+  {
+    "sensor_id": "769373",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.0,
+    "speed_lag_1": 62.333333333333336,
+    "speed_lag_2": 60.375,
+    "speed_lag_3": 54.375,
+    "rolling_mean_3": 61.56944444444445,
+    "future_speed_15min": 61.77777777777778
+  },
+  {
+    "sensor_id": "769388",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.625,
+    "speed_lag_1": 65.55555555555556,
+    "speed_lag_2": 68.0,
+    "speed_lag_3": 67.25,
+    "rolling_mean_3": 67.06018518518518,
+    "future_speed_15min": 67.77777777777777
+  },
+  {
+    "sensor_id": "769402",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.625,
+    "speed_lag_1": 65.22222222222223,
+    "speed_lag_2": 65.625,
+    "speed_lag_3": 56.875,
+    "rolling_mean_3": 64.49074074074075,
+    "future_speed_15min": 62.55555555555556
+  },
+  {
+    "sensor_id": "769403",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.625,
+    "speed_lag_1": 66.55555555555556,
+    "speed_lag_2": 65.625,
+    "speed_lag_3": 61.0,
+    "rolling_mean_3": 66.60185185185185,
+    "future_speed_15min": 68.11111111111111
+  },
+  {
+    "sensor_id": "769405",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 55.0,
+    "speed_lag_1": 50.55555555555556,
+    "speed_lag_2": 50.625,
+    "speed_lag_3": 54.625,
+    "rolling_mean_3": 52.06018518518518,
+    "future_speed_15min": 51.22222222222222
+  },
+  {
+    "sensor_id": "769418",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 53.5,
+    "speed_lag_1": 63.888888888888886,
+    "speed_lag_2": 62.25,
+    "speed_lag_3": 61.75,
+    "rolling_mean_3": 59.879629629629626,
+    "future_speed_15min": 60.888888888888886
+  },
+  {
+    "sensor_id": "769430",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.0,
+    "speed_lag_1": 59.111111111111114,
+    "speed_lag_2": 65.25,
+    "speed_lag_3": 62.25,
+    "rolling_mean_3": 63.120370370370374,
+    "future_speed_15min": 66.55555555555556
+  },
+  {
+    "sensor_id": "769431",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.875,
+    "speed_lag_1": 63.44444444444444,
+    "speed_lag_2": 64.125,
+    "speed_lag_3": 65.625,
+    "rolling_mean_3": 63.81481481481482,
+    "future_speed_15min": 64.33333333333333
+  },
+  {
+    "sensor_id": "769443",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.75,
+    "speed_lag_1": 68.22222222222223,
+    "speed_lag_2": 67.125,
+    "speed_lag_3": 59.75,
+    "rolling_mean_3": 67.69907407407408,
+    "future_speed_15min": 67.44444444444444
+  },
+  {
+    "sensor_id": "769444",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.75,
+    "speed_lag_1": 59.888888888888886,
+    "speed_lag_2": 58.625,
+    "speed_lag_3": 53.25,
+    "rolling_mean_3": 61.08796296296296,
+    "future_speed_15min": 65.0
+  },
+  {
+    "sensor_id": "769467",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 57.375,
+    "speed_lag_1": 64.11111111111111,
+    "speed_lag_2": 65.625,
+    "speed_lag_3": 66.125,
+    "rolling_mean_3": 62.370370370370374,
+    "future_speed_15min": 64.44444444444444
+  },
+  {
+    "sensor_id": "769806",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.5,
+    "speed_lag_1": 55.666666666666664,
+    "speed_lag_2": 62.25,
+    "speed_lag_3": 61.125,
+    "rolling_mean_3": 59.47222222222222,
+    "future_speed_15min": 60.888888888888886
+  },
+  {
+    "sensor_id": "769819",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 52.25,
+    "speed_lag_1": 44.111111111111114,
+    "speed_lag_2": 62.875,
+    "speed_lag_3": 55.125,
+    "rolling_mean_3": 53.0787037037037,
+    "future_speed_15min": 60.77777777777778
+  },
+  {
+    "sensor_id": "769831",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 52.625,
+    "speed_lag_1": 45.111111111111114,
+    "speed_lag_2": 59.5,
+    "speed_lag_3": 54.875,
+    "rolling_mean_3": 52.41203703703704,
+    "future_speed_15min": 58.888888888888886
+  },
+  {
+    "sensor_id": "769847",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 51.875,
+    "speed_lag_1": 51.111111111111114,
+    "speed_lag_2": 57.375,
+    "speed_lag_3": 55.125,
+    "rolling_mean_3": 53.4537037037037,
+    "future_speed_15min": 56.77777777777778
+  },
+  {
+    "sensor_id": "769867",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 49.125,
+    "speed_lag_1": 48.333333333333336,
+    "speed_lag_2": 46.0,
+    "speed_lag_3": 51.625,
+    "rolling_mean_3": 47.81944444444445,
+    "future_speed_15min": 37.22222222222222
+  },
+  {
+    "sensor_id": "769926",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 50.25,
+    "speed_lag_1": 59.111111111111114,
+    "speed_lag_2": 56.875,
+    "speed_lag_3": 58.25,
+    "rolling_mean_3": 55.41203703703704,
+    "future_speed_15min": 57.77777777777778
+  },
+  {
+    "sensor_id": "769941",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 52.5,
+    "speed_lag_1": 40.666666666666664,
+    "speed_lag_2": 52.375,
+    "speed_lag_3": 51.125,
+    "rolling_mean_3": 48.513888888888886,
+    "future_speed_15min": 58.888888888888886
+  },
+  {
+    "sensor_id": "769953",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 45.125,
+    "speed_lag_1": 49.666666666666664,
+    "speed_lag_2": 50.0,
+    "speed_lag_3": 46.375,
+    "rolling_mean_3": 48.263888888888886,
+    "future_speed_15min": 54.77777777777778
+  },
+  {
+    "sensor_id": "771667",
+    "timestamp": "2012-06-25 07:55:00",
+    "speed": 31.333333333333332,
+    "speed_lag_1": 29.75,
+    "speed_lag_2": 25.555555555555557,
+    "speed_lag_3": 27.5,
+    "rolling_mean_3": 28.87962962962963,
+    "future_speed_15min": 31.0
+  },
+  {
+    "sensor_id": "771673",
+    "timestamp": "2012-06-25 07:55:00",
+    "speed": 31.77777777777778,
+    "speed_lag_1": 29.875,
+    "speed_lag_2": 28.444444444444443,
+    "speed_lag_3": 29.875,
+    "rolling_mean_3": 30.03240740740741,
+    "future_speed_15min": 30.0
+  },
+  {
+    "sensor_id": "772140",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 53.75,
+    "speed_lag_1": 64.66666666666667,
+    "speed_lag_2": 62.0,
+    "speed_lag_3": 63.25,
+    "rolling_mean_3": 60.13888888888889,
+    "future_speed_15min": 64.44444444444444
+  },
+  {
+    "sensor_id": "772151",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.875,
+    "speed_lag_1": 65.11111111111111,
+    "speed_lag_2": 63.0,
+    "speed_lag_3": 61.875,
+    "rolling_mean_3": 62.995370370370374,
+    "future_speed_15min": 62.44444444444444
+  },
+  {
+    "sensor_id": "772167",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 54.0,
+    "speed_lag_1": 52.888888888888886,
+    "speed_lag_2": 52.25,
+    "speed_lag_3": 54.0,
+    "rolling_mean_3": 53.0462962962963,
+    "future_speed_15min": 56.0
+  },
+  {
+    "sensor_id": "772168",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 61.25,
+    "speed_lag_1": 64.88888888888889,
+    "speed_lag_2": 64.375,
+    "speed_lag_3": 66.5,
+    "rolling_mean_3": 63.504629629629626,
+    "future_speed_15min": 63.55555555555556
+  },
+  {
+    "sensor_id": "772178",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.625,
+    "speed_lag_1": 65.66666666666667,
+    "speed_lag_2": 65.375,
+    "speed_lag_3": 57.25,
+    "rolling_mean_3": 65.55555555555556,
+    "future_speed_15min": 64.22222222222223
+  },
+  {
+    "sensor_id": "772513",
+    "timestamp": "2012-06-25 07:50:00",
+    "speed": 61.25,
+    "speed_lag_1": 61.111111111111114,
+    "speed_lag_2": 62.625,
+    "speed_lag_3": 61.0,
+    "rolling_mean_3": 61.66203703703704,
+    "future_speed_15min": 57.0
+  },
+  {
+    "sensor_id": "772596",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.0,
+    "speed_lag_1": 60.22222222222222,
+    "speed_lag_2": 66.5,
+    "speed_lag_3": 67.25,
+    "rolling_mean_3": 64.9074074074074,
+    "future_speed_15min": 66.44444444444444
+  },
+  {
+    "sensor_id": "772597",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.125,
+    "speed_lag_1": 59.55555555555556,
+    "speed_lag_2": 65.75,
+    "speed_lag_3": 65.0,
+    "rolling_mean_3": 63.47685185185185,
+    "future_speed_15min": 64.33333333333333
+  },
+  {
+    "sensor_id": "772669",
+    "timestamp": "2012-06-25 07:50:00",
+    "speed": 65.75,
+    "speed_lag_1": 65.11111111111111,
+    "speed_lag_2": 62.0,
+    "speed_lag_3": 64.625,
+    "rolling_mean_3": 64.28703703703704,
+    "future_speed_15min": 59.55555555555556
+  },
+  {
+    "sensor_id": "773012",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.875,
+    "speed_lag_1": 66.88888888888889,
+    "speed_lag_2": 68.125,
+    "speed_lag_3": 63.375,
+    "rolling_mean_3": 66.96296296296296,
+    "future_speed_15min": 66.88888888888889
+  },
+  {
+    "sensor_id": "773013",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.5,
+    "speed_lag_1": 65.88888888888889,
+    "speed_lag_2": 65.0,
+    "speed_lag_3": 64.75,
+    "rolling_mean_3": 65.12962962962963,
+    "future_speed_15min": 63.77777777777778
+  },
+  {
+    "sensor_id": "773023",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 51.875,
+    "speed_lag_1": 56.0,
+    "speed_lag_2": 55.5,
+    "speed_lag_3": 56.5,
+    "rolling_mean_3": 54.458333333333336,
+    "future_speed_15min": 55.44444444444444
+  },
+  {
+    "sensor_id": "773024",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.0,
+    "speed_lag_1": 65.88888888888889,
+    "speed_lag_2": 66.875,
+    "speed_lag_3": 56.25,
+    "rolling_mean_3": 65.92129629629629,
+    "future_speed_15min": 65.66666666666667
+  },
+  {
+    "sensor_id": "773062",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.0,
+    "speed_lag_1": 62.44444444444444,
+    "speed_lag_2": 63.625,
+    "speed_lag_3": 63.75,
+    "rolling_mean_3": 62.68981481481482,
+    "future_speed_15min": 65.77777777777777
+  },
+  {
+    "sensor_id": "773869",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 61.375,
+    "speed_lag_1": 65.0,
+    "speed_lag_2": 62.875,
+    "speed_lag_3": 67.625,
+    "rolling_mean_3": 63.083333333333336,
+    "future_speed_15min": 65.11111111111111
+  },
+  {
+    "sensor_id": "773880",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.125,
+    "speed_lag_1": 68.22222222222223,
+    "speed_lag_2": 64.75,
+    "speed_lag_3": 67.375,
+    "rolling_mean_3": 66.36574074074075,
+    "future_speed_15min": 65.77777777777777
+  },
+  {
+    "sensor_id": "773904",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 64.75,
+    "speed_lag_1": 63.0,
+    "speed_lag_2": 62.0,
+    "speed_lag_3": 65.25,
+    "rolling_mean_3": 63.25,
+    "future_speed_15min": 64.55555555555556
+  },
+  {
+    "sensor_id": "773906",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 66.25,
+    "speed_lag_1": 65.22222222222223,
+    "speed_lag_2": 67.125,
+    "speed_lag_3": 67.75,
+    "rolling_mean_3": 66.19907407407408,
+    "future_speed_15min": 67.11111111111111
+  },
+  {
+    "sensor_id": "773916",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 68.25,
+    "speed_lag_1": 67.88888888888889,
+    "speed_lag_2": 67.125,
+    "speed_lag_3": 66.25,
+    "rolling_mean_3": 67.75462962962963,
+    "future_speed_15min": 69.33333333333333
+  },
+  {
+    "sensor_id": "773927",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.375,
+    "speed_lag_1": 66.11111111111111,
+    "speed_lag_2": 64.625,
+    "speed_lag_3": 68.75,
+    "rolling_mean_3": 66.03703703703704,
+    "future_speed_15min": 67.55555555555556
+  },
+  {
+    "sensor_id": "773939",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.5,
+    "speed_lag_1": 65.11111111111111,
+    "speed_lag_2": 64.625,
+    "speed_lag_3": 66.375,
+    "rolling_mean_3": 65.74537037037037,
+    "future_speed_15min": 62.111111111111114
+  },
+  {
+    "sensor_id": "773953",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.5,
+    "speed_lag_1": 62.666666666666664,
+    "speed_lag_2": 60.875,
+    "speed_lag_3": 52.5,
+    "rolling_mean_3": 62.013888888888886,
+    "future_speed_15min": 63.22222222222222
+  },
+  {
+    "sensor_id": "773954",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.875,
+    "speed_lag_1": 62.55555555555556,
+    "speed_lag_2": 63.25,
+    "speed_lag_3": 55.25,
+    "rolling_mean_3": 62.89351851851851,
+    "future_speed_15min": 62.55555555555556
+  },
+  {
+    "sensor_id": "773974",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 52.5,
+    "speed_lag_1": 54.77777777777778,
+    "speed_lag_2": 57.125,
+    "speed_lag_3": 56.25,
+    "rolling_mean_3": 54.800925925925924,
+    "future_speed_15min": 55.333333333333336
+  },
+  {
+    "sensor_id": "773975",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 63.5,
+    "speed_lag_1": 64.88888888888889,
+    "speed_lag_2": 63.5,
+    "speed_lag_3": 66.375,
+    "rolling_mean_3": 63.96296296296296,
+    "future_speed_15min": 65.0
+  },
+  {
+    "sensor_id": "773995",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.25,
+    "speed_lag_1": 58.22222222222222,
+    "speed_lag_2": 61.25,
+    "speed_lag_3": 57.25,
+    "rolling_mean_3": 61.574074074074076,
+    "future_speed_15min": 65.0
+  },
+  {
+    "sensor_id": "773996",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.125,
+    "speed_lag_1": 60.44444444444444,
+    "speed_lag_2": 59.5,
+    "speed_lag_3": 63.125,
+    "rolling_mean_3": 61.68981481481482,
+    "future_speed_15min": 61.666666666666664
+  },
+  {
+    "sensor_id": "774011",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 65.75,
+    "speed_lag_1": 66.66666666666667,
+    "speed_lag_2": 66.75,
+    "speed_lag_3": 57.125,
+    "rolling_mean_3": 66.3888888888889,
+    "future_speed_15min": 65.22222222222223
+  },
+  {
+    "sensor_id": "774012",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 67.875,
+    "speed_lag_1": 64.88888888888889,
+    "speed_lag_2": 66.625,
+    "speed_lag_3": 66.125,
+    "rolling_mean_3": 66.46296296296296,
+    "future_speed_15min": 65.88888888888889
+  },
+  {
+    "sensor_id": "774067",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 62.625,
+    "speed_lag_1": 61.77777777777778,
+    "speed_lag_2": 61.25,
+    "speed_lag_3": 65.5,
+    "rolling_mean_3": 61.88425925925926,
+    "future_speed_15min": 56.0
+  },
+  {
+    "sensor_id": "774204",
+    "timestamp": "2012-06-27 18:10:00",
+    "speed": 60.125,
+    "speed_lag_1": 65.11111111111111,
+    "speed_lag_2": 64.5,
+    "speed_lag_3": 64.875,
+    "rolling_mean_3": 63.245370370370374,
+    "future_speed_15min": 64.88888888888889
+  }
+]

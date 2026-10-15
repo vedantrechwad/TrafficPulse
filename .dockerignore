@@ -1,0 +1,32 @@
+# Git and IDE
+.git
+.gitignore
+.vscode
+.idea
+.gemini
+*.swp
+
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Node and frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.oxlintrc.json
+
+# Windows binaries (unneeded in Linux containers)
+hadoop/
+
+# Large training-only datasets (not required for runtime inference)
+data/raw/METR-LA.h5
+data/processed/traffic_features.parquet/
+
+# Batch scripts and docs
+*.bat

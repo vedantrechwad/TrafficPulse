@@ -1,0 +1,24 @@
+{
+  "description": "TrafficPulse Congestion Classification Thresholds (Visualization & Analysis)",
+  "unit": "mph",
+  "categories": {
+    "LOW": {
+      "min_speed": 50.0,
+      "max_speed": null,
+      "label": "Low Congestion (Free Flow)",
+      "color": "#10B981"
+    },
+    "MEDIUM": {
+      "min_speed": 30.0,
+      "max_speed": 50.0,
+      "label": "Medium Congestion (Moderate Delay)",
+      "color": "#F59E0B"
+    },
+    "HIGH": {
+      "min_speed": 0.0,
+      "max_speed": 30.0,
+      "label": "High Congestion (Severe Delay / Stop & Go)",
+      "color": "#EF4444"
+    }
+  }
+}
