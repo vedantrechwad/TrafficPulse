@@ -306,20 +306,16 @@ cd ..
 
 ## 18.1 Quick 1-Click Run (Windows)
 
-To start the entire application (Backend + Frontend + Browser) at once without typing multiple terminal commands:
+To start the entire application (Backend + Frontend + Browser) at once in a **single terminal window**:
 ```bat
 run.bat
 ```
 This launcher:
-1. Configures `HADOOP_HOME` and system paths for PySpark on Windows.
-2. Starts the **FastAPI Backend** (`http://127.0.0.1:8000`) in its own console.
-3. Starts the **Vite React Frontend** (`http://127.0.0.1:5173`) in its own console.
-4. Automatically opens the dashboard in your default browser.
-
-To stop both servers at once:
-```bat
-stop.bat
-```
+1. Automatically detects Python (`.venv`, `venv`, or system Python) and sets `HADOOP_HOME` for PySpark on Windows.
+2. Cleans up any stale processes on ports 8000 and 5173 upfront to prevent port conflicts.
+3. Launches the **FastAPI PySpark Backend** (`http://127.0.0.1:8000`) and the **React + Vite Frontend** (`http://127.0.0.1:5173`) in one unified console session.
+4. Automatically opens the dashboard in your default browser once initialized.
+5. **Automatic Cleanup:** Simply **close the terminal window** (or press `Ctrl+C`) at any time — Windows Job Object process management and exit handlers will immediately stop all backend and frontend services and clean up ports 8000 and 5173 automatically (no separate `stop.bat` needed).
 
 ---
 
