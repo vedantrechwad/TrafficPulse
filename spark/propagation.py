@@ -118,10 +118,14 @@ def analyze_congestion_neighbors(
     sensor_to_ind: Dict[str, int],
     adj_mx: np.ndarray,
     locations_map: Optional[Dict[str, Dict[str, float]]] = None,
+    speed_delta: float = 0.0,
+    config_categories: Optional[Dict[str, Any]] = None,
 ) -> Dict[str, Any]:
     """
     Computes network congestion propagation metrics for a selected sensor:
       - Outgoing connected sensors and their live speeds/congestion.
+      - If speed_delta != 0, propagates the hypothetical perturbation along physical graph edges:
+          propagated_speed = clamp(base_speed + weight * speed_delta, 5.0, 80.0)
       - Counts of connected sensors in HIGH, MEDIUM, and LOW states.
       - Weighted network congestion score:
           score = sum(weight * state_val) / sum(weight)
@@ -144,11 +148,36 @@ def analyze_congestion_neighbors(
 
     state_weights = {"LOW": 0.0, "MEDIUM": 0.5, "HIGH": 1.0}
 
+    low_thresh = 50.0
+    med_thresh = 30.0
+    if config_categories:
+        low_thresh = config_categories.get("LOW", {}).get("min_speed", 50.0)
+        med_thresh = config_categories.get("MEDIUM", {}).get("min_speed", 30.0)
+
     for n in raw_neighbors:
         n_id = n["sensor_id"]
         n_obs = observations_map.get(n_id, {})
-        n_speed = n_obs.get("speed", 50.0)
-        n_congestion = n_obs.get("congestion_level", "LOW")
+        n_speed_base = float(n_obs.get("speed", 50.0))
+
+        if speed_delta != 0.0:
+            propagated_change = n["weight"] * speed_delta
+            n_speed = round(max(5.0, min(80.0, n_speed_base + propagated_change)), 2)
+            if n_speed >= low_thresh:
+                n_congestion = "LOW"
+            elif n_speed >= med_thresh:
+                n_congestion = "MEDIUM"
+            else:
+                n_congestion = "HIGH"
+        else:
+            n_speed = round(n_speed_base, 2)
+            n_congestion = n_obs.get("congestion_level")
+            if not n_congestion:
+                if n_speed >= low_thresh:
+                    n_congestion = "LOW"
+                elif n_speed >= med_thresh:
+                    n_congestion = "MEDIUM"
+                else:
+                    n_congestion = "HIGH"
 
         if n_congestion == "HIGH":
             high_count += 1
@@ -164,7 +193,7 @@ def analyze_congestion_neighbors(
         enriched_neighbors.append({
             "sensor_id": n_id,
             "weight": n["weight"],
-            "speed_mph": round(float(n_speed), 2),
+            "speed_mph": n_speed,
             "congestion_level": n_congestion,
             "latitude": n["latitude"],
             "longitude": n["longitude"],

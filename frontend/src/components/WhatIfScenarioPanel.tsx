@@ -27,6 +27,24 @@ export const WhatIfScenarioPanel: React.FC<WhatIfScenarioPanelProps> = ({
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Sync inputs with the target sensor when selected
+  React.useEffect(() => {
+    const match = sensors.find((s) => s.sensor_id === selectedSensorId);
+    if (match) {
+      setSpeed(match.speed);
+      setSpeedLag1(match.speed_lag_1);
+      setSpeedLag2(match.speed_lag_2);
+      setSpeedLag3(match.speed_lag_3);
+      if (match.timestamp) {
+        const parts = match.timestamp.split(' ');
+        if (parts.length === 2) {
+          setScenarioDate(parts[0]);
+          setScenarioTime(parts[1].substring(0, 5));
+        }
+      }
+    }
+  }, [selectedSensorId, sensors]);
+
   // Quick preset helper
   const applyPreset = (type: 'slowdown' | 'heavy' | 'freeflow') => {
     if (type === 'slowdown') {

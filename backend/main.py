@@ -378,7 +378,7 @@ def get_sensor_observations():
     summary="Get Recent Historical Speed Profile",
     tags=["Telemetry"],
 )
-def get_sensor_history(sensor_id: str):
+def get_sensor_history(sensor_id: str, timestamp: Optional[str] = None):
     """
     Returns recent chronological traffic speed observations for the specified sensor
     to render the actual vs future speed trend line chart.
@@ -390,15 +390,45 @@ def get_sensor_history(sensor_id: str):
             detail=f"Sensor ID '{s_id}' not found in METR-LA network.",
         )
 
-    history_records = app.state.history_map.get(s_id, [])
-    history_points = [
-        HistoryPoint(
-            timestamp=r["timestamp"],
-            speed=round(float(r["speed"]), 2),
-            future_speed_15min=round(float(r["future_speed_15min"]), 2) if r.get("future_speed_15min") is not None else None,
-        )
-        for r in history_records
-    ]
+    history_points = []
+    if timestamp:
+        ts_clean = str(timestamp).strip()
+        replay_data = getattr(app.state, "replay_data", {})
+        snapshots = replay_data.get("snapshots", {})
+        alt_ts = ts_clean.replace("T", " ") if "T" in ts_clean else ts_clean.replace(" ", "T")
+        match_ts = ts_clean if ts_clean in snapshots else (alt_ts if alt_ts in snapshots else None)
+        if match_ts:
+            d_str = match_ts[:10]
+            day_ts_list = replay_data.get("timestamps_by_date", {}).get(d_str, [])
+            if match_ts in day_ts_list:
+                idx = day_ts_list.index(match_ts)
+                start_idx = max(0, idx - 18)
+                window_ts = day_ts_list[start_idx : idx + 1]
+                for t in window_ts:
+                    s_obs = next((s for s in snapshots.get(t, []) if s.get("sensor_id") == s_id), None)
+                    if s_obs:
+                        history_points.append(
+                            HistoryPoint(
+                                timestamp=t,
+                                speed=round(float(s_obs["speed"]), 2),
+                                future_speed_15min=round(float(s_obs["predicted_speed_15min"]), 2)
+                                if s_obs.get("predicted_speed_15min") is not None
+                                else None,
+                            )
+                        )
+
+    if not history_points:
+        history_records = app.state.history_map.get(s_id, [])
+        history_points = [
+            HistoryPoint(
+                timestamp=r["timestamp"],
+                speed=round(float(r["speed"]), 2),
+                future_speed_15min=round(float(r["future_speed_15min"]), 2)
+                if r.get("future_speed_15min") is not None
+                else None,
+            )
+            for r in history_records
+        ]
 
     return SensorHistoryResponse(
         sensor_id=s_id,
@@ -492,7 +522,7 @@ def predict_traffic_speed(payload: PredictionRequest):
     summary="Congestion Propagation & Network Relationship Analysis",
     tags=["Propagation"],
 )
-def get_sensor_propagation(sensor_id: str):
+def get_sensor_propagation(sensor_id: str, timestamp: Optional[str] = None):
     """
     Analyzes graph-connected downstream sensors and network congestion indicators
     for a selected sensor based on the physical METR-LA road sensor adjacency matrix.
@@ -508,14 +538,25 @@ def get_sensor_propagation(sensor_id: str):
             detail=f"Sensor ID '{s_id}' not found in METR-LA road network graph.",
         )
 
+    obs_map = app.state.observations_map
+    if timestamp:
+        ts_clean = str(timestamp).strip()
+        replay_data = getattr(app.state, "replay_data", {})
+        snapshots = replay_data.get("snapshots", {})
+        alt_ts = ts_clean.replace("T", " ") if "T" in ts_clean else ts_clean.replace(" ", "T")
+        match_ts = ts_clean if ts_clean in snapshots else (alt_ts if alt_ts in snapshots else None)
+        if match_ts:
+            obs_map = {s["sensor_id"]: s for s in snapshots[match_ts]}
+
     try:
         analysis = analyze_congestion_neighbors(
             sensor_id=s_id,
-            observations_map=app.state.observations_map,
+            observations_map=obs_map,
             sensor_ids=app.state.graph_sensor_ids,
             sensor_to_ind=app.state.graph_sensor_to_ind,
             adj_mx=app.state.adj_mx,
             locations_map=app.state.locations_map,
+            config_categories=app.state.congestion_config.get("categories"),
         )
         return PropagationResponse(**analysis)
     except Exception as e:
@@ -809,21 +850,31 @@ def analyze_scenario(payload: ScenarioRequest):
     current_congestion = get_congestion_level(current_speed)
     predicted_congestion = get_congestion_level(predicted_speed)
 
-    # Copy current observations map and inject hypothetical state
-    scenario_obs_map = dict(app.state.observations_map)
-    scenario_obs_map[sensor_id] = {
-        "sensor_id": sensor_id,
-        "speed": current_speed,
-        "congestion_level": current_congestion,
-    }
+    # 1. Base observations map: contextualize with snapshot if timestamp available, else default observations
+    base_obs_map = dict(app.state.observations_map)
+    ts_clean = payload.timestamp.strip()
+    replay_data = getattr(app.state, "replay_data", {})
+    snapshots = replay_data.get("snapshots", {})
+    alt_ts = ts_clean.replace("T", " ") if "T" in ts_clean else ts_clean.replace(" ", "T")
+    snap_key = ts_clean if ts_clean in snapshots else (alt_ts if alt_ts in snapshots else None)
+    if snap_key:
+        for s in snapshots[snap_key]:
+            base_obs_map[s["sensor_id"]] = s
 
+    # 2. Determine target sensor baseline speed and scenario perturbation
+    sensor_baseline_speed = float(base_obs_map.get(sensor_id, {}).get("speed", 55.0))
+    speed_delta = current_speed - sensor_baseline_speed
+
+    # 3. Propagate perturbation across physical road graph connections
     prop_analysis = analyze_congestion_neighbors(
         sensor_id=sensor_id,
-        observations_map=scenario_obs_map,
+        observations_map=base_obs_map,
         sensor_ids=app.state.graph_sensor_ids,
         sensor_to_ind=app.state.graph_sensor_to_ind,
         adj_mx=app.state.adj_mx,
         locations_map=app.state.locations_map,
+        speed_delta=speed_delta,
+        config_categories=app.state.congestion_config.get("categories"),
     )
 
     return ScenarioResponse(

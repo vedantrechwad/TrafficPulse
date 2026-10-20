@@ -146,9 +146,11 @@ export function App() {
     setLoadingPropagation(true);
     setPropagationError(null);
 
+    const activeTimestamp = mode === 'replay' && timestamps[currentIndex] ? timestamps[currentIndex] : sensor.timestamp;
+
     // 1. Live Spark ML 15-minute prediction
     const predPromise = predictTrafficSpeed({
-      timestamp: sensor.timestamp,
+      timestamp: activeTimestamp,
       sensor_id: sensor.sensor_id,
       speed: sensor.speed,
       speed_lag_1: sensor.speed_lag_1,
@@ -167,8 +169,8 @@ export function App() {
         setLoadingPrediction(false);
       });
 
-    // 2. Chronological speed history
-    const histPromise = fetchSensorHistory(sensor.sensor_id)
+    // 2. Chronological speed history with active timestamp context
+    const histPromise = fetchSensorHistory(sensor.sensor_id, activeTimestamp)
       .then((res) => {
         setHistory(res.history);
       })
@@ -177,8 +179,8 @@ export function App() {
         setHistory([]);
       });
 
-    // 3. Network propagation analysis
-    const propPromise = fetchSensorPropagation(sensor.sensor_id)
+    // 3. Network propagation analysis with active timestamp context
+    const propPromise = fetchSensorPropagation(sensor.sensor_id, activeTimestamp)
       .then((res) => {
         setPropagation(res);
         setLoadingPropagation(false);
@@ -252,6 +254,51 @@ export function App() {
           }
           return prev;
         });
+
+        // Synchronize propagation network state dynamically from active snapshot
+        setPropagation((prevProp) => {
+          if (!prevProp) return prevProp;
+          const obsMap = new Map(updatedSensors.map((s) => [s.sensor_id, s]));
+          const targetObs = obsMap.get(prevProp.sensor_id);
+
+          let highCount = 0;
+          let medCount = 0;
+          let lowCount = 0;
+          let totalWeightedState = 0;
+          let totalWeight = 0;
+          const stateWeights: Record<string, number> = { LOW: 0.0, MEDIUM: 0.5, HIGH: 1.0 };
+
+          const updatedNeighbors = prevProp.neighbors.map((n) => {
+            const curr = obsMap.get(n.sensor_id);
+            const speed = curr ? curr.speed : n.speed_mph;
+            const cong = curr ? curr.congestion_level : n.congestion_level;
+            if (cong === 'HIGH') highCount++;
+            else if (cong === 'MEDIUM') medCount++;
+            else lowCount++;
+
+            totalWeightedState += n.weight * (stateWeights[cong] ?? 0.0);
+            totalWeight += n.weight;
+
+            return {
+              ...n,
+              speed_mph: speed,
+              congestion_level: cong,
+            };
+          });
+
+          const weightedScore = totalWeight > 0 ? Number((totalWeightedState / totalWeight).toFixed(2)) : 0;
+
+          return {
+            ...prevProp,
+            sensor_speed_mph: targetObs ? targetObs.speed : prevProp.sensor_speed_mph,
+            sensor_congestion: targetObs ? targetObs.congestion_level : prevProp.sensor_congestion,
+            high_count: highCount,
+            medium_count: medCount,
+            low_count: lowCount,
+            weighted_congestion_score: weightedScore,
+            neighbors: updatedNeighbors,
+          };
+        });
       } catch (err) {
         console.error('Error loading replay snapshot:', err);
       }
@@ -269,6 +316,11 @@ export function App() {
       setCurrentIndex(0);
       if (tsList.length > 0) {
         loadReplayStep(tsList[0]);
+        if (selectedSensor) {
+          fetchSensorHistory(selectedSensor.sensor_id, tsList[0])
+            .then((r) => setHistory(r.history))
+            .catch(() => {});
+        }
       }
     }
   };
@@ -277,6 +329,11 @@ export function App() {
     if (idx >= 0 && idx < timestamps.length) {
       setCurrentIndex(idx);
       loadReplayStep(timestamps[idx]);
+      if (selectedSensor) {
+        fetchSensorHistory(selectedSensor.sensor_id, timestamps[idx])
+          .then((r) => setHistory(r.history))
+          .catch(() => {});
+      }
     }
   };
 
@@ -285,6 +342,11 @@ export function App() {
       const newIdx = currentIndex - 1;
       setCurrentIndex(newIdx);
       loadReplayStep(timestamps[newIdx]);
+      if (selectedSensor) {
+        fetchSensorHistory(selectedSensor.sensor_id, timestamps[newIdx])
+          .then((r) => setHistory(r.history))
+          .catch(() => {});
+      }
     }
   };
 
@@ -293,13 +355,26 @@ export function App() {
       const newIdx = currentIndex + 1;
       setCurrentIndex(newIdx);
       loadReplayStep(timestamps[newIdx]);
+      if (selectedSensor) {
+        fetchSensorHistory(selectedSensor.sensor_id, timestamps[newIdx])
+          .then((r) => setHistory(r.history))
+          .catch(() => {});
+      }
     } else {
       setIsPlaying(false);
     }
   };
 
   const handleTogglePlay = () => {
-    setIsPlaying((prev) => !prev);
+    setIsPlaying((prev) => {
+      const next = !prev;
+      if (!next && selectedSensor && timestamps[currentIndex]) {
+        fetchSensorHistory(selectedSensor.sensor_id, timestamps[currentIndex])
+          .then((r) => setHistory(r.history))
+          .catch(() => {});
+      }
+      return next;
+    });
   };
 
   // Replay animation timer loop

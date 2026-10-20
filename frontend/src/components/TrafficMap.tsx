@@ -135,16 +135,21 @@ export const TrafficMap: React.FC<TrafficMapProps> = ({
     }
 
     if (showNetwork && selectedSensor && propagation && propagation.neighbors) {
-      return propagation.neighbors.map((n) => ({
-        key: `prop-edge-${selectedSensor.sensor_id}-${n.sensor_id}`,
-        from: [selectedSensor.latitude, selectedSensor.longitude] as [number, number],
-        to: [n.latitude, n.longitude] as [number, number],
-        fromId: selectedSensor.sensor_id,
-        toId: n.sensor_id,
-        weight: n.weight,
-        speed: n.speed_mph,
-        congestion: n.congestion_level,
-      }));
+      return propagation.neighbors.map((n) => {
+        const currentNeighbor = sensors.find((s) => s.sensor_id === n.sensor_id);
+        const currentSpeed = currentNeighbor ? currentNeighbor.speed : n.speed_mph;
+        const currentCongestion = currentNeighbor ? currentNeighbor.congestion_level : n.congestion_level;
+        return {
+          key: `prop-edge-${selectedSensor.sensor_id}-${n.sensor_id}`,
+          from: [selectedSensor.latitude, selectedSensor.longitude] as [number, number],
+          to: [n.latitude, n.longitude] as [number, number],
+          fromId: selectedSensor.sensor_id,
+          toId: n.sensor_id,
+          weight: n.weight,
+          speed: currentSpeed,
+          congestion: currentCongestion,
+        };
+      });
     }
 
     return [];
@@ -239,9 +244,25 @@ export const TrafficMap: React.FC<TrafficMapProps> = ({
 
           {/* Render All 207 Sensor Markers */}
           {sensors.map((sensor) => {
+            let effectiveSpeed = sensor.speed;
+            let effectiveCongestion = sensor.congestion_level;
+
+            if (scenarioMode && scenarioResult) {
+              if (sensor.sensor_id === scenarioResult.sensor_id) {
+                effectiveSpeed = scenarioResult.current_speed_mph;
+                effectiveCongestion = scenarioResult.current_congestion_level;
+              } else {
+                const matchNeighbor = scenarioResult.neighbors?.find((n) => n.sensor_id === sensor.sensor_id);
+                if (matchNeighbor) {
+                  effectiveSpeed = matchNeighbor.speed_mph;
+                  effectiveCongestion = matchNeighbor.congestion_level;
+                }
+              }
+            }
+
             const isSelected = effectiveSelectedId === sensor.sensor_id;
             const isNeighbor = neighborIds.has(sensor.sensor_id);
-            const markerColor = getMarkerColor(sensor.congestion_level);
+            const markerColor = getMarkerColor(effectiveCongestion);
 
             // Responsive marker styling
             let radius = 5.5;
@@ -290,12 +311,12 @@ export const TrafficMap: React.FC<TrafficMapProps> = ({
                       {isNeighbor && ' (Connected Neighbor)'}
                     </div>
                     <div style={{ margin: '4px 0' }}>
-                      <strong>Speed:</strong> {sensor.speed.toFixed(1)} mph
+                      <strong>Speed:</strong> {effectiveSpeed.toFixed(1)} mph
                     </div>
                     <div>
                       <strong>Congestion:</strong>{' '}
                       <span style={{ color: markerColor, fontWeight: 700 }}>
-                        {sensor.congestion_level}
+                        {effectiveCongestion}
                       </span>
                     </div>
                     {isNeighbor && (

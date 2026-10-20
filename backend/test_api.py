@@ -295,8 +295,27 @@ def run_tests():
         assert res.status_code == 422
         print("[PASS] Scenario error handling checks PASSED")
 
+        print("\n--- Test 19: Dynamic Network Propagation & Scenario Coupling Verification ---")
+        # 19a: Propagation endpoint with timestamp parameter
+        res_ts_prop = client.get(f"/api/sensors/716955/propagation?timestamp={sample_ts}")
+        assert res_ts_prop.status_code == 200
+        ts_prop_data = res_ts_prop.json()
+        assert "neighbor_count" in ts_prop_data
+        assert ts_prop_data["neighbor_count"] == 5
+
+        # 19b: Test that severe bottleneck scenario dynamically propagates to downstream neighbors
+        severe_jam_payload = dict(scenario_payload, speed=15.0, speed_lag_1=20.0, speed_lag_2=25.0, speed_lag_3=30.0)
+        res_jam = client.post("/api/scenario/analyze", json=severe_jam_payload)
+        assert res_jam.status_code == 200
+        jam_data = res_jam.json()
+        # Verify that connected neighbor with strong weight (0.5893) drops speed below baseline
+        strongest_n = max(jam_data["neighbors"], key=lambda x: x["weight"])
+        assert strongest_n["speed_mph"] < 50.0, f"Expected downstream slowdown, got {strongest_n['speed_mph']}"
+        print(f"Propagated downstream speed at #{strongest_n['sensor_id']} (w={strongest_n['weight']}): {strongest_n['speed_mph']} mph ({strongest_n['congestion_level']})")
+        print("[PASS] Dynamic network propagation & scenario coupling checks PASSED")
+
     print("\n" + "=" * 60)
-    print("ALL API TESTS (18/18) PASSED SUCCESSFULLY!")
+    print("ALL API TESTS (19/19) PASSED SUCCESSFULLY!")
     print("=" * 60)
 
 

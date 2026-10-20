@@ -337,8 +337,8 @@ def main():
     t_frontend.start()
 
     # Step 4: Wait for services
-    print("[4/4] Initializing services (PySpark ML warmup in progress)...", flush=True)
-    backend_ready = wait_for_url("http://127.0.0.1:8000/api/health", timeout=45.0)
+    print("[4/4] Initializing services (PySpark ML engine warming up ~15s)...", flush=True)
+    backend_ready = wait_for_url("http://127.0.0.1:8000/api/health", timeout=60.0)
     frontend_ready = wait_for_url("http://127.0.0.1:5173", timeout=25.0)
 
     print(flush=True)
@@ -355,10 +355,14 @@ def main():
     print(flush=True)
 
     # Automatically open browser
+    print("Opening TrafficPulse in your default browser (http://127.0.0.1:5173)...", flush=True)
     try:
-        webbrowser.open("http://127.0.0.1:5173")
-    except Exception:
-        pass
+        if os.name == "nt":
+            subprocess.run(["cmd", "/c", "start", "", "http://127.0.0.1:5173"], shell=True)
+        else:
+            webbrowser.open("http://127.0.0.1:5173")
+    except Exception as e:
+        print(f"[WARN] Could not automatically open browser: {e}", flush=True)
 
     # Step 5: Monitor processes until interrupted or closed
     try:

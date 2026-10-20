@@ -37,8 +37,11 @@ export async function fetchSensorObservations(): Promise<SensorObservation[]> {
   return res.json();
 }
 
-export async function fetchSensorHistory(sensorId: string): Promise<SensorHistoryResponse> {
-  const res = await fetch(`${API_BASE_URL}/api/sensors/${sensorId}/history`);
+export async function fetchSensorHistory(sensorId: string, timestamp?: string): Promise<SensorHistoryResponse> {
+  const url = timestamp
+    ? `${API_BASE_URL}/api/sensors/${sensorId}/history?timestamp=${encodeURIComponent(timestamp)}`
+    : `${API_BASE_URL}/api/sensors/${sensorId}/history`;
+  const res = await fetch(url);
   if (!res.ok) {
     throw new Error(`Failed to fetch history for sensor ${sensorId} (${res.status})`);
   }
@@ -62,8 +65,11 @@ export async function predictTrafficSpeed(payload: PredictionRequest): Promise<P
   return res.json();
 }
 
-export async function fetchSensorPropagation(sensorId: string): Promise<PropagationResponse> {
-  const res = await fetch(`${API_BASE_URL}/api/sensors/${sensorId}/propagation`);
+export async function fetchSensorPropagation(sensorId: string, timestamp?: string): Promise<PropagationResponse> {
+  const url = timestamp
+    ? `${API_BASE_URL}/api/sensors/${sensorId}/propagation?timestamp=${encodeURIComponent(timestamp)}`
+    : `${API_BASE_URL}/api/sensors/${sensorId}/propagation`;
+  const res = await fetch(url);
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
     throw new Error(err.detail || `Failed to fetch propagation analysis for sensor ${sensorId} (${res.status})`);
